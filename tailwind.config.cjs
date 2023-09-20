@@ -19,7 +19,7 @@ module.exports = {
         mobile: "-850px",
       },
       padding: {
-        rem: "1.3rem",
+        rem: "3rem",
       },
     },
   },
