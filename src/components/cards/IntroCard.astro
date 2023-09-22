@@ -1,0 +1,15 @@
+---
+interface Props {
+    CardTitle: string;
+    CardDescription: string;
+    CustomClass?: string;
+    Route?: string;
+}
+const { CardTitle, CardDescription, CustomClass, Route } = Astro.props;
+---
+
+<a href={"./intro/" + Route} class={"border-2 dark:bg-[#0A101D] bg-[#EDEEF1] dark:border-[#16233f] p-3 rounded-md hover:-translate-y-2 transition-all select-none cursor-pointer dark:hover:shadow-slate-900 hover:shadow-lg " + CustomClass }>
+    <h2 class="font-bold text-2xl">{ CardTitle }</h2>
+    <em>{ CardDescription.length > 25 ? CardDescription.slice(0 , 45) + "..." : CardDescription }</em>
+</a>
+
